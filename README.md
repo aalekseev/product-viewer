@@ -14,6 +14,7 @@ and then displayed in GUI app.
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [List of Packages](#list-of-packages)
+- [Packaging](#packaging)
 - [Useful Resources](#useful-resources)
 - [Changelog](#changelog)
 
@@ -54,6 +55,11 @@ and then displayed in GUI app.
 * Qt documentation [doc.qt.io](https://doc.qt.io)
 * Inspiring repository [15 minute PyQt apps](https://github.com/mfitzp/15-minute-apps)
 * Book of the same author [Create Simple GUI Applications](https://martinfitzpatrick.name/create-simple-gui-applications)
+
+## Packaging
+#. With `cx_Freeze`, need to run `python setup.py build` to create folder with binary and dependent libraries
+#. With `cx_Freeze`, for intaller run `python setup.py build_msi`
+#. With `pyinstaller` it is possible to create a one-file executable with `pyinstaller --onefile --noconsole product_viewer/app.py`
 
 ## Changelog
 
